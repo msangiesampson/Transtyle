@@ -1,0 +1,7 @@
+<%= simple_form_for [:admin, @shape] do  |f|%>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.input :avatar %>
+
+  <%= f.submit "Create", class: 'button' %>
+<% end %>

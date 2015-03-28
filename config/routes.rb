@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :colours, only: [:new, :create, :index]
+    resources :shapes, only: [:new, :create, :index]
   end
 
   # Example of regular route:
