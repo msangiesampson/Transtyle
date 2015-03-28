@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     resources :colours, only: [:new, :create, :index]
     resources :shapes, only: [:new, :create, :index]
     resources :occasions, only: [:new, :create, :index]
+    resources :garments, only: [:new, :create, :index]
   end
 
   # Example of regular route:

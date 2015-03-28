@@ -1,0 +1,8 @@
+<h2>New Garment Type</h2>
+<hr/>
+<%= simple_form_for [:admin, @garment] do  |f|%>
+  <%= f.input :name %>
+  <%= f.input :part %>
+  <%= f.submit "Create", class: 'button' %>
+<% end %>
+
