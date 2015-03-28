@@ -5,5 +5,28 @@
   </li>
   <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 </ul>
+
+<section class="top-bar-section">
+<!-- Right Nav Section -->
+<ul class="right">
+  <li class="active"><%= link_to "Outfits", outfits_path %></li>
+  <li><%= link_to "New Outfit", new_outfit_path %></li>
+  <li class="has-dropdown">
+  <a href="#">Admin</a>
+  <ul class="dropdown">
+    <li>
+    <%=link_to "New Colour", new_admin_colour_path %>
+    </li>
+    <li>
+    <%=link_to "New Shape", new_admin_shape_path %>
+    </li>
+    <li>
+    <%=link_to "New Occasion", new_admin_occasion_path %>
+    </li>
+  </ul>
+  </li>
+</ul>
+
+</section>
 </nav>
 
