@@ -31,3 +31,7 @@ s.avatar = "https://dl.dropboxusercontent.com/u/108831317/pug1.png"
 s.description = "i dont know"
 s.name = "Apple"
 s.save
+
+g = Garment.new
+g.name = "shirt"
+g.save
