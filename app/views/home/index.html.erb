@@ -1,2 +1,6 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<% @outfits.each do |outfit| %>
+  <%= outfit.inspect %>
+  <div style="background-color: #<%= outfit.colour.colour %>">
+    a
+  </div>
+<% end %>
