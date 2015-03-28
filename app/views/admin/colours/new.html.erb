@@ -1,0 +1,5 @@
+<%= simple_form_for [:admin, @colour] do  |f|%>
+  <%= f.input :name %>
+  <%= f.input :colour, hint: "color code, don't use #" %>
+  <%= f.submit "Create", class: 'button' %>
+<% end %>

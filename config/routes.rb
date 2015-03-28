@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   root 'home#index'
   resources :outfits
 
+  namespace :admin do
+    resources :colours, only: [:new, :create, :index]
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
