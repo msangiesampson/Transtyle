@@ -1,0 +1,5 @@
+<%=simple_form_for @search do |f| %>
+  <%= f.association :shape, label: 'Please select a body shape' %>
+  <%= f.submit "Search", class: "button" %>
+<% end %>
+

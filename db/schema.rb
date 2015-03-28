@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150328131030) do
+ActiveRecord::Schema.define(version: 20150328170116) do
 
   create_table "colours", force: :cascade do |t|
     t.string   "colour"
@@ -51,6 +51,19 @@ ActiveRecord::Schema.define(version: 20150328131030) do
   add_index "outfits", ["garment_id"], name: "index_outfits_on_garment_id"
   add_index "outfits", ["occasion_id"], name: "index_outfits_on_occasion_id"
   add_index "outfits", ["shape_id"], name: "index_outfits_on_shape_id"
+
+  create_table "searches", force: :cascade do |t|
+    t.integer  "shape_id"
+    t.integer  "colour_id"
+    t.integer  "garment_id"
+    t.integer  "occasion_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "searches", ["garment_id"], name: "index_searches_on_garment_id"
+  add_index "searches", ["occasion_id"], name: "index_searches_on_occasion_id"
+  add_index "searches", ["shape_id"], name: "index_searches_on_shape_id"
 
   create_table "shapes", force: :cascade do |t|
     t.string   "avatar"

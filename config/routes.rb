@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   root 'home#index'
   resources :outfits
+  resources :searches
 
   namespace :admin do
     resources :colours, only: [:new, :create, :index]
