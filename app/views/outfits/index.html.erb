@@ -1,5 +1,10 @@
-<% @outfits.each do |outfit| %>
-  <%= outfit.inspect %>
-  <div style="background-color: #<%= outfit.colour.colour %>">
+  <div id="outfits" class="large-12 columns">
+    <% @outfits.each do |outfit| %>
+      <div class="outfit">
+        <%= outfit.name %>
+        <label style='background-color: #<%= outfit.colour.colour %>'>aa </label>
+        <%= image_tag outfit.image %>
+        <%= outfit.description %>
+      </div>
+    <% end %>
   </div>
-<% end %>
