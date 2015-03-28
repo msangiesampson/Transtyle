@@ -2,7 +2,7 @@
     <% @outfits.each do |outfit| %>
       <div class="outfit">
         <%= outfit.name %>
-        <label style='background-color: #<%= outfit.colour.colour %>'>aa </label>
+        <label class="colour-marker" style='background-color: #<%= outfit.colour.colour %>'>aa </label>
         <%= image_tag outfit.image %>
         <%= outfit.description %>
       </div>
